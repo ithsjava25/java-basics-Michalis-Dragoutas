@@ -158,7 +158,7 @@ public class Main {
 
     private static void handleCharging(List<Elpris> prices, String chargingArg) {
         int hours = Integer.parseInt(chargingArg.replace("h", ""));
-        if (prices.size() < hours) {
+        if (prices.size() < hours ) {
             System.out.println("Not enough data for charging window.");
             return;
         }
